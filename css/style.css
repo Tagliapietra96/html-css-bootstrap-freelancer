@@ -65,3 +65,30 @@ footer{
 footer i{
     font-size: smaller;
 }
+
+header{
+    z-index: 2000;
+}
+
+li{
+    transition: all .5s;
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:575px) {
+    header input:checked + ul{
+        display: flex !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        background-color: var(--bs-dark);
+        border-top: 1px solid white;
+    }
+    
+}
+
